@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<criteria>
+		<criterion id="1">
+			<type>numerical</type>
+			<direction>-</direction>
+			<weight>0.01</weight>
+		</criterion>
+		<criterion id="2">
+			<type>ordinal</type>
+			<values>
+<value id="1">**</value>
+<value id="2">***</value>
+<value id="3">****</value>
+			</values>
+			<direction>+</direction>
+			<weight>0.26</weight>
+		</criterion>
+		<criterion id="3">
+			<type>ordinal</type>
+			<values>
+<value id="1">A</value>
+<value id="2">B</value>
+<value id="3">C</value>
+			</values>
+			<direction>-</direction>
+			<weight>0.49</weight>
+		</criterion>
+			<criterion id="4">
+			<type>ordinal</type>
+			<values>
+<value id="1">+</value>
+<value id="2">=</value>
+<value id="3">-</value>	
+			</values>
+			<direction>-</direction>
+			<weight>0.24</weight>
+		</criterion>	
+	</criteria>
+	<alternatives>
+		<alternative id="1">
+			<name>a1</name>
+			<criteriaValues>
+<criterionValue id="1">60</criterionValue>
+<criterionValue id="2">***</criterionValue>
+<criterionValue id="3">C</criterionValue>
+<criterionValue id="4">+</criterionValue>
+			</criteriaValues>
+		</alternative>
+		<alternative id="2">
+			<name>a2</name>
+			<criteriaValues>
+<criterionValue id="1">60</criterionValue>
+<criterionValue id="2">**</criterionValue>
+<criterionValue id="3">B</criterionValue>
+<criterionValue id="4">+</criterionValue>
+			</criteriaValues>
+		</alternative>
+		<alternative id="3">
+			<name>a3</name>
+			<criteriaValues>
+<criterionValue id="1">80</criterionValue>
+<criterionValue id="2">****</criterionValue>
+<criterionValue id="3">A</criterionValue>
+<criterionValue id="4">=</criterionValue>
+			</criteriaValues>
+		</alternative>
+		<alternative id="6">
+			<name>a6</name>
+			<criteriaValues>
+<criterionValue id="1">70</criterionValue>
+<criterionValue id="2">**</criterionValue>
+<criterionValue id="3">A</criterionValue>
+<criterionValue id="4">=</criterionValue>
+			</criteriaValues>
+		</alternative>	
+		<alternative id="4">
+			<name>a4</name>
+			<criteriaValues>
+				<criterionValue id="1">80</criterionValue>
+				<criterionValue id="2">***</criterionValue>
+				<criterionValue id="3">B</criterionValue>
+				<criterionValue id="4">=</criterionValue>
+			</criteriaValues>
+		</alternative>
+		<alternative id="5">
+			<name>a5</name>
+			<criteriaValues>
+				<criterionValue id="1">70</criterionValue>
+				<criterionValue id="2">****</criterionValue>
+				<criterionValue id="3">C</criterionValue>
+				<criterionValue id="4">=</criterionValue>
+			</criteriaValues>
+		</alternative>	
+	</alternatives>
+	<refpoints>
+		<refpoint id="1">
+			<criteriaValues>
+<criterionValue id="1">60</criterionValue>
+<criterionValue id="2">****</criterionValue>
+<criterionValue id="3">B</criterionValue>
+<criterionValue id="4">+</criterionValue>
+			</criteriaValues>
+		</refpoint>
+		<refpoint id="2">
+			<criteriaValues>
+<criterionValue id="1">70</criterionValue>
+<criterionValue id="2">***</criterionValue>
+<criterionValue id="3">C</criterionValue>
+<criterionValue id="4">=</criterionValue>
+			</criteriaValues>
+		</refpoint>
+	</refpoints>
+	
+</data>
