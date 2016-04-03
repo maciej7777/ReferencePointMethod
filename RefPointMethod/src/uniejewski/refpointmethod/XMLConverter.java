@@ -66,7 +66,10 @@ public class XMLConverter {
         			 for(int j=0; j<values.getLength(); j++){
         				 Node valuesNode = values.item(j);
         				 if (valuesNode.getNodeType() == Node.ELEMENT_NODE) {
-        					 tmp.addValueName(valuesNode.getTextContent().trim());
+        					 String tmpValueName = valuesNode.getTextContent().trim();
+        					 tmpValueName.replaceAll("\t", "");
+        					 tmpValueName.replaceAll("\n", "");
+        					 tmp.addValueName(tmpValueName);
         				 }
         			 }
         		 }
@@ -91,7 +94,10 @@ public class XMLConverter {
         			 for(int j=0; j<values.getLength(); j++){
         				 Node valuesNode = values.item(j);
         				 if (valuesNode.getNodeType() == Node.ELEMENT_NODE) {
-        					 tmp.addCriterionOriginalValue(valuesNode.getTextContent().trim());
+        					 String tmpValueName = valuesNode.getTextContent().trim();
+        					 tmpValueName.replaceAll("\t", "");
+        					 tmpValueName.replaceAll("\n", "");
+        					 tmp.addCriterionOriginalValue(tmpValueName);
         					 tmp.addCtiterionValue(array.get(j).getValue(tmp.getCriteriaOriginalValues().get(j)));
         				 }
         			 }
@@ -116,7 +122,10 @@ public class XMLConverter {
     			 for(int j=0; j<values.getLength(); j++){
     				 Node valuesNode = values.item(j);
     				 if (valuesNode.getNodeType() == Node.ELEMENT_NODE) {
-    					 tmp.addCriterionOriginalValue(valuesNode.getTextContent().trim());
+    					 String tmpValueName = valuesNode.getTextContent().trim();
+    					 tmpValueName.replaceAll("\t", "");
+    					 tmpValueName.replaceAll("\n", "");
+    					 tmp.addCriterionOriginalValue(tmpValueName);
     					 tmp.addCtiterionValue(criteria.get(j).getValue(tmp.getCriteriaOriginalValues().get(j)));
     				 }
     			 }
